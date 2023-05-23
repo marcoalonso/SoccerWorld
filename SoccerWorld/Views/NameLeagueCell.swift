@@ -12,6 +12,7 @@ class NameLeagueCell: UICollectionViewCell {
     
     static let identifier = "LeagueCell"
     
+    @IBOutlet weak var backgroundPitch: UIImageView!
     @IBOutlet weak var logoLeague: UIImageView!
     @IBOutlet weak var countryLeague: UIImageView!
     @IBOutlet weak var nameLeague: UILabel!
@@ -19,6 +20,9 @@ class NameLeagueCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        backgroundPitch.layer.cornerRadius = 12
+        backgroundPitch.layer.masksToBounds = true
+        
         
     }
     
