@@ -9,25 +9,31 @@
 /* Begin PBXBuildFile section */
 		6C3E31D42A1C7A6D00F76071 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3E31D32A1C7A6D00F76071 /* AppDelegate.swift */; };
 		6C3E31D62A1C7A6D00F76071 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3E31D52A1C7A6D00F76071 /* SceneDelegate.swift */; };
-		6C3E31D82A1C7A6D00F76071 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3E31D72A1C7A6D00F76071 /* ViewController.swift */; };
+		6C3E31D82A1C7A6D00F76071 /* LeaguesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3E31D72A1C7A6D00F76071 /* LeaguesViewController.swift */; };
 		6C3E31DB2A1C7A6D00F76071 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C3E31D92A1C7A6D00F76071 /* Main.storyboard */; };
 		6C3E31DD2A1C7A6F00F76071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C3E31DC2A1C7A6F00F76071 /* Assets.xcassets */; };
 		6C3E31E02A1C7A6F00F76071 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C3E31DE2A1C7A6F00F76071 /* LaunchScreen.storyboard */; };
 		6CF4FC1F2A1C7F5100B9C551 /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF4FC1D2A1C7F5100B9C551 /* League.swift */; };
 		6CF4FC202A1C7F5100B9C551 /* League.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CF4FC1E2A1C7F5100B9C551 /* League.xib */; };
+		6CF4FC222A1C81F700B9C551 /* SoccerManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF4FC212A1C81F700B9C551 /* SoccerManager.swift */; };
+		6CF4FC242A1C827E00B9C551 /* LeagueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF4FC232A1C827E00B9C551 /* LeagueModel.swift */; };
+		6CF4FC272A1C830A00B9C551 /* NetworkConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF4FC262A1C830A00B9C551 /* NetworkConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6C3E31D02A1C7A6D00F76071 /* SoccerWorld.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerWorld.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C3E31D32A1C7A6D00F76071 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6C3E31D52A1C7A6D00F76071 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		6C3E31D72A1C7A6D00F76071 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6C3E31D72A1C7A6D00F76071 /* LeaguesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaguesViewController.swift; sourceTree = "<group>"; };
 		6C3E31DA2A1C7A6D00F76071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6C3E31DC2A1C7A6F00F76071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C3E31DF2A1C7A6F00F76071 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C3E31E12A1C7A6F00F76071 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CF4FC1D2A1C7F5100B9C551 /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
 		6CF4FC1E2A1C7F5100B9C551 /* League.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = League.xib; sourceTree = "<group>"; };
+		6CF4FC212A1C81F700B9C551 /* SoccerManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoccerManager.swift; sourceTree = "<group>"; };
+		6CF4FC232A1C827E00B9C551 /* LeagueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueModel.swift; sourceTree = "<group>"; };
+		6CF4FC262A1C830A00B9C551 /* NetworkConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +66,17 @@
 		6C3E31D22A1C7A6D00F76071 /* SoccerWorld */ = {
 			isa = PBXGroup;
 			children = (
+				6CF4FC252A1C830500B9C551 /* Utils */,
 				6C3E31EB2A1C7B9100F76071 /* Models */,
 				6C3E31D32A1C7A6D00F76071 /* AppDelegate.swift */,
 				6C3E31D52A1C7A6D00F76071 /* SceneDelegate.swift */,
-				6C3E31D72A1C7A6D00F76071 /* ViewController.swift */,
+				6C3E31D72A1C7A6D00F76071 /* LeaguesViewController.swift */,
 				6C3E31D92A1C7A6D00F76071 /* Main.storyboard */,
 				6C3E31DC2A1C7A6F00F76071 /* Assets.xcassets */,
 				6C3E31DE2A1C7A6F00F76071 /* LaunchScreen.storyboard */,
 				6C3E31E12A1C7A6F00F76071 /* Info.plist */,
 				6C3E31EC2A1C7B9800F76071 /* Views */,
+				6CF4FC212A1C81F700B9C551 /* SoccerManager.swift */,
 			);
 			path = SoccerWorld;
 			sourceTree = "<group>";
@@ -76,6 +84,7 @@
 		6C3E31EB2A1C7B9100F76071 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6CF4FC232A1C827E00B9C551 /* LeagueModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -87,6 +96,14 @@
 				6CF4FC1E2A1C7F5100B9C551 /* League.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		6CF4FC252A1C830500B9C551 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6CF4FC262A1C830A00B9C551 /* NetworkConstants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,7 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C3E31D82A1C7A6D00F76071 /* ViewController.swift in Sources */,
+				6CF4FC272A1C830A00B9C551 /* NetworkConstants.swift in Sources */,
+				6CF4FC242A1C827E00B9C551 /* LeagueModel.swift in Sources */,
+				6C3E31D82A1C7A6D00F76071 /* LeaguesViewController.swift in Sources */,
+				6CF4FC222A1C81F700B9C551 /* SoccerManager.swift in Sources */,
 				6C3E31D42A1C7A6D00F76071 /* AppDelegate.swift in Sources */,
 				6CF4FC1F2A1C7F5100B9C551 /* League.swift in Sources */,
 				6C3E31D62A1C7A6D00F76071 /* SceneDelegate.swift in Sources */,
