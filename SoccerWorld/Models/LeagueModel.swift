@@ -18,4 +18,5 @@ struct LeagueModel : Decodable {
     var league_logo : String?
     var country_key : Int?
     var country_name : String?
+    var country_logo: String?
 }
